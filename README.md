@@ -68,7 +68,10 @@ The model was then hosted over the Internet with Flask as the backend, HTML, CSS
 
 
 # Access The Final Website
-You can access the website [here](https://aitmltask.online)
+You can access the website [here](https://aitmltask.online). 
+
+# Limitations
+Note that currently, the solution supports predictions only on a limited single words like coffee, beer, trust, magic, silence, etc. You may encounter issues during predictions with some other words.
 
 
 # How to Run the Search Engine Docker Container Locally
