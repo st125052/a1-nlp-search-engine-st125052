@@ -1,0 +1,6 @@
+services:
+  flask-app:
+    image: st125052/a1-nlp-search-engine:latest-deployment
+    ports:
+      - "5000:5000"
+    restart: always
