@@ -19,18 +19,25 @@ document.getElementById('searchForm').addEventListener('submit', function (event
     }
 });
 
-
 function predictRelevantContent(search) {
-    const apiUrl = `/predict?search=${search}`;
+    const apiUrl = `/predict?search=${encodeURIComponent(search)}`;
 
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            console.log('API response:', data);
             if (Array.isArray(data) && data.length > 0) {
-                const searchResult = JSON.stringify(data);
-                document.getElementById('searchResult').textContent = `${searchResult.toLocaleString()}`;
-                document.getElementById('resultContainer').style.display = 'block';
+                const resultContainer = document.getElementById('resultContainer');
+                const searchResultElement = document.getElementById('searchResult');
+
+                searchResultElement.innerHTML = '';
+
+                data.forEach(word => {
+                    const button = document.createElement('button');
+                    button.textContent = word;
+                    button.className = 'btn btn-word mx-1 my-1';
+                    searchResultElement.appendChild(button);
+                });
+                resultContainer.style.display = 'block';
             } else {
                 console.error('Unexpected API response format:', data);
             }
