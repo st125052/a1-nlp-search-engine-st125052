@@ -1,3 +1,6 @@
+# Name: Swaraj Bhanja
+# Student Id: st125052
+
 # Welcome to Search Engine!
 
 This is a web-based end-to-end application named Search Engine. It leverages the power of deep learning and web development to provide a website that returns 10 relevant words based on the input word.
@@ -18,6 +21,7 @@ Apart from Gensim, training loops were run where the models learned word relatio
 ## Testing
 For testing purposes, the models were pickled and then testing methods were applied. Metrics like MSE, Window Size, Semantic Accuracy & Syntactical Accuracies were recorded for all the four models and can be found in this
 hyperlink: [Analysis Metrics](https://github.com/st125052/a1-nlp-search-engine-st125052/blob/a0ac3c5a15e22b7fb0a7af117ad0f38168716df5/notebooks/pdfs/Training%20and%20Accuracy%20Statistics.pdf)
+> - The Spearman's correlation coefficients were also computed. However, for all the values, the correlations were not above the p-values, hence the current models do NOT correlate well with human judgment. This could possibly be attributed to the limitation of the corpus selected.
 
 ## Pickling The Model
 The Gensim ML model was chosen for deployment.
