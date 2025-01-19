@@ -67,7 +67,7 @@ The model was then hosted over the Internet with Flask as the backend, HTML, CSS
 You can access the website [here](https://aitmltask.online)
 
 
-# How to Run the Car Price Predictor Docker Container Locally
+# How to Run the Search Engine Docker Container Locally
 ### Step 1: Clone the Repository
 > - First, clone the repository to your local machine.
 ### Step 2: Install Docker
