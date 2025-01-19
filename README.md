@@ -1,5 +1,4 @@
-# Name: Swaraj Bhanja
-# Student Id: st125052
+# Name: Swaraj Bhanja Student Id: st125052
 
 # Welcome to Search Engine!
 
