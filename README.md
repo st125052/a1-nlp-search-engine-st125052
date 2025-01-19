@@ -79,5 +79,5 @@ Once Docker is installed, navigate to the app folder in the project directory. D
 ### Important Notes
 > - The above commands will serve the Docker container on port 5000 and forward the requests to the Flask application running on port 5000 in the containerized environment.
 > - Ensure Ports Are Free: Make sure that port 5000 is not already in use on your machine before running the container.
-> - Changing Flask's Port: If you wish to change the port Flask runs on (currently set to 5000), you must update the port in the app.py file. After making the change, remember to rebuild the Docker image. Execute the following command to stop the process: `docker compose up -d`. Then goto Docker Desktop and delete the container and image from docker. 
+> - Changing Flask's Port: If you wish to change the port Flask runs on (currently set to 5000), you must update the port in the app.py file. After making the change, remember to rebuild the Docker image in the next step. Execute the following command to stop the process: `docker compose down`. Then goto Docker Desktop and delete the container and image from docker. 
 
